@@ -1,0 +1,5 @@
+name: LanJoinMessage
+version: '1.0-SNAPSHOT'
+main: io.github.artificial720.lanjoinmessage.LanJoinMessage
+api-version: '1.21'
+load: STARTUP
