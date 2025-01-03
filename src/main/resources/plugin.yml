@@ -1,5 +1,7 @@
 name: LanJoinMessage
-version: '1.0-SNAPSHOT'
+version: '${version}'
 main: io.github.artificial720.lanjoinmessage.LanJoinMessage
-api-version: '1.21'
+api-version: '${minecraft_version}'
 load: STARTUP
+author: '${author}'
+description: '${description}'
