@@ -2,9 +2,6 @@ plugins {
     id 'java'
 }
 
-group = 'io.github.artificial-720'
-version = '1.0-SNAPSHOT'
-
 repositories {
     mavenCentral()
     maven {
@@ -18,10 +15,10 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
+    compileOnly "io.papermc.paper:paper-api:${project.minecraft_version}-R0.1-SNAPSHOT"
 }
 
-def targetJavaVersion = 21
+def targetJavaVersion = 17
 java {
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     sourceCompatibility = javaVersion
@@ -40,7 +37,11 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 processResources {
-    def props = [version: version]
+    def props = [version    : version,
+                 author     : author,
+                 description: project.description,
+                 minecraft_version: project.minecraft_version
+    ]
     inputs.properties props
     filteringCharset 'UTF-8'
     filesMatching('plugin.yml') {

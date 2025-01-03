@@ -1,2 +1,14 @@
-# Lan welcome message content
-lan-message: "This server has Squaremap running, available <green><click:open_url:'http://192.168.1.237:8080/'><hover:show_text:'http://192.168.1.237:8080/'>[click]</hover></click><reset>."
+# LAN Join Message Configuration File
+# Author: Artificial-720
+# For issues or suggestions, please submit them at: https://github.com/Artificial-720/LanJoinMessage/issues
+
+
+# LAN Welcome Message Content:
+# Supports MiniMessage formatting for text styling and interactivity.
+
+# Example:
+# This example message includes a link to a map web interface,
+# styled with a green color and hover functionality for better interactivity.
+#lan-message: "This server has a map running, available <green><click:open_url:'http://192.168.1.237:8080/'><hover:show_text:'http://192.168.1.237:8080/'>http://192.168.1.237:8080/</hover></click><reset>."
+
+lan-message: "Welcome to our LAN server!"
